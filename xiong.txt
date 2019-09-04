@@ -1,5 +1,5 @@
 1.org.mybatis.spring.MyBatisSystemException nested exception is org.apache.ibatis.reflection.ReflectionException Could not set property 'Member' of 'class com.itheima.ssm.domain.Orders' with value 'com.itheima.ssm.domain.Member@74bf1791' Cause org.apache.ibatis.reflection.ReflectionException There is no setter for property named 'Member' in 'class com.itheima.ssm.domain.Orders'
 原因：select 语句中property中的值用成了大驼峰式导致属性无法找到
-2.select * from traveller t,order_traveller ot where ot.travelerId = t.id and ot.orderId=#{oid}
-写成select * from traveller v,order_traveller ot where ot.travelerId = t.id and ot.orderId=#{oid} 一个字母写错了
+2.select * from traveller t,order_traveller ot where ot.travellerId = t.id and ot.orderId=#{oid}
+写成select * from traveller v,order_traveller ot where ot.travelerId = t.id and ot.orderId=#{oid} 字母写错了
 
