@@ -2,4 +2,7 @@
 原因：select 语句中property中的值用成了大驼峰式导致属性无法找到
 2.select * from traveller t,order_traveller ot where ot.travellerId = t.id and ot.orderId=#{oid}
 写成select * from traveller v,order_traveller ot where ot.travelerId = t.id and ot.orderId=#{oid} 字母写错了
+3.忘了改将数据库的密码改成加密后的格式 导致一直无法登陆上
+4.ROLE_CEO 等 写成了在UserServiceImp中写成了Role_CEO 
+没有将Role_全写成小写
 
