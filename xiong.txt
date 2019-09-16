@@ -5,4 +5,6 @@
 3.忘了改将数据库的密码改成加密后的格式 导致一直无法登陆上
 4.ROLE_CEO 等 写成了在UserServiceImp中写成了Role_CEO 
 没有将Role_全写成小写
+5.品优购阶段angularUI框架调用需要加ng-init 不然不会调用 wdnmd
+6.服务器之间的实体类之间的传输，实体类需要继承 Serializable 这个类才不会报错
 
