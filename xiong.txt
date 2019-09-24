@@ -7,4 +7,6 @@
 没有将Role_全写成小写
 5.品优购阶段angularUI框架调用需要加ng-init 不然不会调用 wdnmd
 6.服务器之间的实体类之间的传输，实体类需要继承 Serializable 这个类才不会报错
-
+7.post请求发送的参数，后端需要用@requestBady注解接收
+8.不要写错字母,click 写成clikc 丢人玩意
+9.创建类的时候有参无参都要加
